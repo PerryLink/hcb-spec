@@ -1,0 +1,78 @@
+{
+  "schema": "hcb-tracks/1",
+  "source": "dsh-levels/1 from PerryLink/dsh-standards (Apache-2.0); this is a consumer mapping, not a redefinition",
+  "rules": [
+    "ENTRY, FLOW and BOOST are independent tracks; never collapse them into one score.",
+    "A skip is not a pass; not-run is not a pass; static is not runtime.",
+    "BOOST is guiding practice, not a gate; it never overrides ENTRY or FLOW.",
+    "Compatibility is declared, not tested; a declared-compatible row is a claim by the package author."
+  ],
+  "tracks": {
+    "entry": {
+      "label": "DSH-ENTRY",
+      "question": "can it be recognized, installed, and booted?",
+      "gates": [
+        "G0",
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5"
+      ],
+      "states": [
+        "runtime",
+        "recognized",
+        "static",
+        "blocked",
+        "failed",
+        "not-run",
+        "stale"
+      ]
+    },
+    "flow": {
+      "label": "DSH-FLOW",
+      "question": "can a user install, configure, use, recover and uninstall without surprises?",
+      "gates": [
+        "J1",
+        "J2",
+        "J3",
+        "J4",
+        "J5",
+        "J6",
+        "J7",
+        "J8"
+      ],
+      "states": [
+        "runtime",
+        "manual",
+        "not-run",
+        "failed",
+        "stale"
+      ]
+    },
+    "boost": {
+      "label": "DSH-BOOST",
+      "question": "does it use Cordis native capabilities efficiently?",
+      "gates": [
+        "LEV-1",
+        "LEV-2",
+        "LEV-3",
+        "LEV-4",
+        "LEV-5",
+        "LEV-6",
+        "LEV-7",
+        "LEV-8"
+      ],
+      "states": [
+        "measured",
+        "not-measured",
+        "failed",
+        "stale"
+      ]
+    }
+  },
+  "gate": {
+    "policy": "hcb-gate/1",
+    "note": "A compatibility/risk gate, not a quality grade; BOOST is not used."
+  }
+}

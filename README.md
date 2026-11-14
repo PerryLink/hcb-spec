@@ -1,6 +1,6 @@
 # HCB spec
 
-> Consumer-facing spec for the HCB compatibility/tracks model. **The canonical data lives in [dsh-compat-baseline](https://github.com/PerryLink/dsh-compat-baseline).**
+> Consumer-facing spec for the HCB compatibility/tracks model. **The canonical data lives in [dsh-compat-baseline](https://github.com/PerryLink/hcb).**
 
 ## What is here
 
